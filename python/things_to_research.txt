@@ -1,0 +1,11 @@
+import os
+import os.path
+import datetime
+z = x + y > 7 and x * y < 15 or x - y > 2
+list methods
+try except raise throw finally
+import io
+import sys
+f string methods (specifally rounding)
+assert
+\\n \\t
