@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Odd or even</title>
+  </head>
+  <body style="background-color: rgb(51, 45, 45)">
+    <form method="post">
+      <div class="container">
+        <h1 class="item item3">{% block content %} {% endblock %}</h1>
+        {% with messages = get_flashed_messages(with_categories=true) %} {% if
+        messages %} {% for message in messages %}
+        <div class="error_message" role="alert">{{ message }}</div>
+        {% endfor %} {% endif %} {% endwith %}
+        <input
+          type="number"
+          class="item item1"
+          name="answer"
+          id="answer"
+          placeholder="Enter a number!"
+          autofocus
+        />
+        <button
+          id="button"
+          class="item item2"
+          onmouseover="buttonStyle()"
+          onmouseleave="unbuttonStyle()"
+          onmousedown="buttonStyle2()"
+          onmouseup="unbuttonStyle2()"
+        >
+          Calculate
+        </button>
+      </div>
+    </form>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+</html>
