@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="backgroundColor">
+    
+    <label for="windowWidth">Window Width:</label>
+    <input type="range" min="1" max='1570' value="1" id="windowWidth" onchange="code()">
+    <label for="windowHeight">Window Height:</label>
+    <input type="range" min="27" max='760' value="27" id="windowHeight" onchange="code()">
+    <label for="circleRadius">Circle Radius:</label>
+    <input type="range" min="1" max='500' value='88' id="circleRadius" onchange="code()">
+    <label for="startXPos">Start X Position:</label>
+    <input type="range" min="1" max='1500' id="startXPos" onchange="code()">
+    <label for="startYPos">Start Y Position:</label>
+    <input type="range" min="1" max='781' id="startYPos" onchange="code()">
+    <br>
+
+
+
+
+    <canvas id="canvas"></canvas>
+
+    <script src="main.js"></script>
+</body>
+</html>

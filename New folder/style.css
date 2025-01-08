@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+}
+#canvas {
+    background-color: black;
+}
+
+/* function code(){
+    requestAnimationFrame(code);   
+    windowWidthAdjuster = document.getElementById('windowWidth').value;
+    windowHeightAdjuster = document.getElementById('windowHeight').value;
+    windowWidth = window.innerWidth - windowWidthAdjuster;
+    windowHeight = window.innerHeight - windowHeightAdjuster;
+    circleRadiusAdjuster = document.getElementById('circleRadius').value;
+    startXPosAdjuster = document.getElementById('startXPos').value;
+    startYPosAdjuster = document.getElementById('startYPos').value;
+    canvas.width = windowWidth;
+    canvas.height = windowHeight;
+}
+
+
+
+function animateCircle() {
+    canvas = document.getElementById('canvas');
+    context = canvas.getContext('2d');
+    colors = ['red', 'green', 'pink', 'purple', 'orange', 'blue', 'yellow',     'white', 'grey', 'maroon', 'turquoise', '#FF6F61'];
+    class Circle{
+        constructor(xpos, ypos, radius, color, lineWidth, speed) {
+            this.xpos = xpos;
+            this.ypos = ypos;
+            this.radius = radius;
+            this.color = color;
+            this.lineWidth = lineWidth;
+            this.speed = speed;
+
+            this.dx = 1 * this.speed;
+            this.dy = 1 * this.speed;
+        }
+
+        draw(context) {
+            context.beginPath();
+            context.arc(this.xpos, this.ypos, this.radius, 0, Math.PI * 2, false);
+            context.strokeStyle = this.color;
+            context.lineWidth = this.lineWidth;
+            context.stroke()
+        }
+
+        update() {
+            this.xpos += this.dx;
+            this.ypos += this.dy;
+            
+            if ((this.xpos + this.radius) > windowWidth) {
+                this.color = colors[(Math.floor(Math.random() * colors.length))];
+                this.dx = -this.dx;
+            }
+            if ((this.ypos + this.radius) > windowHeight) {
+                this.color = colors[(Math.floor(Math.random() * colors.length))];
+                this.dy = -this.dy;
+            }
+            if ((this.xpos - this.radius) < 0) {
+                this.color = colors[(Math.floor(Math.random() * colors.length))];
+                this.dx = -this.dx;
+            }
+            if ((this.ypos - this.radius) < 0) {
+                this.color = colors[(Math.floor(Math.random() * colors.length))];
+                this.dy = -this.dy;
+            }
+        }
+    }
+
+    let newCircle = new Circle(49, 49, 50, this.color, 10, 10);
+
+    
+    function update() {
+        requestAnimationFrame(update);
+        console.log(newCircle.color);
+        newCircle.draw(context);
+        newCircle.update();
+    }
+
+    update();
+}
+
+code();
+animateCircle(); */
